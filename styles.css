@@ -77,6 +77,31 @@ body {
     align-items: center;
 }
 
+.header {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.header-top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: 1;
+    align-items: center;
+}
+
+.search-area {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    justify-items: center;
+}
+
+.user-area {
+    display: grid;
+    grid-template-columns: 5rem 5rem 20rem;
+    justify-content: flex-end;
+    align-items: center;
+}
+
 .placeholder-img {
     height: 50px;
     width: 50px;
@@ -87,4 +112,8 @@ ul {
     display: grid;
     grid-template: repeat(6, 1fr) / 1fr 4fr;
     list-style-type: none;
+}
+
+input[type="search"] {
+    width: 100%;
 }
