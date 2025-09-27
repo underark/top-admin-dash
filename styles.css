@@ -102,6 +102,11 @@ body {
     align-items: center;
 }
 
+.header-bottom {
+	display: grid;
+	grid-template-columns: 1fr 2fr 2fr;
+}
+
 .content {
 	display: grid;
 	grid-template: 1fr 1fr / 1fr 25rem;
@@ -155,10 +160,16 @@ body {
     background-color: greenyellow;
 }
 
-ul {
+.sidebar > ul {
     display: grid;
     grid-template: repeat(6, 1fr) / 1fr 4fr;
     list-style-type: none;
+	align-items: center;
+	row-gap: 0.5rem;
+}
+
+.sidebar > ul > li {
+	margin-left: 1rem;
 }
 
 input[type="search"] {
