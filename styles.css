@@ -73,8 +73,12 @@ body {
 .logo {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    justify-items: center;
     align-items: center;
+    padding: 1rem;
+}
+
+.logo h1 {
+	margin-left: 1rem;
 }
 
 .header {
@@ -91,8 +95,10 @@ body {
 
 .search-area {
     display: grid;
-    grid-template-columns: 1fr 5fr;
-    justify-items: center;
+    grid-template-columns: 5rem 5fr;
+    justify-items: left;
+	align-items: center;
+	margin-left: 4rem;
 }
 
 .user-area {
@@ -104,7 +110,7 @@ body {
 
 .header-bottom {
 	display: grid;
-	grid-template-columns: 1fr 2fr 2fr;
+	grid-template-columns: 100px 2fr 2fr;
 }
 
 .content {
@@ -173,5 +179,9 @@ body {
 }
 
 input[type="search"] {
-    width: 100%;
+    width: clamp(20rem, 100%, 38rem);
+	height: 36px;
+	border-color: transparent;
+	background-color: #b3b3b3;
+	border-radius: 36px;
 }
