@@ -70,6 +70,7 @@ body {
     gap: 3rem;
     grid-row: 1 / 3;
     background-color: #6aa2fc;
+	color: white;
 }
 
 .logo {
@@ -101,7 +102,7 @@ body {
 
 .search-area {
     display: grid;
-    grid-template-columns: 5rem 5fr;
+    grid-template-columns: 2rem 5fr;
     justify-items: left;
 	align-items: center;
 	margin-left: 4rem;
@@ -175,7 +176,6 @@ body {
 	display: -webkit-box;
 		-webkit-line-clamp: 2;
 		-webkit-box-orient: vertical;
-
 }
 
 .cards {
@@ -207,10 +207,16 @@ body {
 	gap: 1rem;
 }
 
-.placeholder-img {
+.placeholder-img, .sidebar img {
     height: 50px;
     width: 50px;
+	filter: invert(100%);
     background-color: greenyellow;
+}
+
+.search-area img {
+	height: 25px;
+	width: 25px;
 }
 
 .sidebar > ul {
@@ -221,6 +227,7 @@ body {
     list-style-type: none;
 	align-items: center;
 	row-gap: 0.5rem;
+	font-weight: bold;
 }
 
 .sidebar > ul > li {
